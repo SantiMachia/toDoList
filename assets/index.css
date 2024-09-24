@@ -2,7 +2,7 @@
 /* @import "" */
 
 /* Icons */
-/* @import "" */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css";
 
 :root {
     --bg-color: #333;
@@ -10,14 +10,57 @@
 
 body {
     background-color: var(--bg-color);
+    transition: background-color .4s;
 }
 
-*, *::before,
+*,
+*::before,
 *:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+input {
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+/* Scheme button */
+.change-theme {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 100%;
+    background-color: #444;
+}
+
+.scheme-animation {
+    animation: schemeBtn .8s forwards;
+}
+
+.color-icon {
+    color: #e2e2e2;
+    font-size: 1.5em;
+}
+
+
+
+@media (min-width: 1024px) {
+    .change-theme:hover {
+        background-color: #555;
+    }
 }
 
 h1 {
