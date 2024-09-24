@@ -2,3 +2,4 @@
 import components from "./utils/components.js";
 
 components.colorSchemeButton()
+components.addTask()

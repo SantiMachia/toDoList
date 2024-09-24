@@ -31,6 +31,8 @@ button {
 }
 
 input {
+    width: 50%;
+    margin: 10px;
     outline: none;
     padding: 10px;
     border-radius: 10px;
@@ -75,14 +77,11 @@ h1 {
     width: 500px;
     overflow: auto;
     background-color: #e2e2e2;
-    box-shadow: 0 0 55px #0007;
+    box-shadow: 0 0 55px #e2e2e2;
     color: #444;
-}
-
-.row {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .button_completada,
